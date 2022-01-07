@@ -2,6 +2,7 @@ package com.example.sampleagp71hiltapp
 
 import android.os.Build
 import androidx.test.core.app.ActivityScenario
+import dagger.hilt.android.testing.HiltAndroidTest
 import org.junit.Assert.*
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -15,6 +16,7 @@ import org.robolectric.annotation.Config
  */
 @RunWith(RobolectricTestRunner::class)
 @Config(sdk = [Build.VERSION_CODES.M])
+@HiltAndroidTest
 class ExampleUnitTest {
     @Test
     fun addition_isCorrect() {
